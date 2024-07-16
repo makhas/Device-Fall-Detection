@@ -1,0 +1,5 @@
+# Fall Detection of Mounted Devices in Transit
+
+![image](https://github.com/user-attachments/assets/4a7d0769-4d45-421c-8cde-8c16d1740f1a)
+
+A successful data science platform requires consistent data collection, and often times the real world gets in the way of data collection. This is especially true when working with external hardware sensors for use cases in safety and insurance. External sensors do not always have access to IMU ports available in vehicles, and instead rely on measuring data like GPS, acceleration, and orientations from inbuilt sensors. This creates two independent reference frames, a real one of the car, and a measured one of the external sensors. Generally when a drive starts, a calculation is made to minimize the difference between these two reference frames, after which data collected generally becomes usable for analysis. However, if the device falls, then the previously calculated difference fails to adjust the measured reference frame to the real reference frame. This repo covers some of the methods and formats relevant to this problem of detecting a fall to allow for recalculated reference frames.
